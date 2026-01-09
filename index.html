@@ -2,139 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="WDD 130 Home Page">
+    <meta name="author" content="Richard Muwonge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Home Page</title>
+    <title>Richard Muwonge | WDD 130</title>
 
-    <!-- ✅ Embedded CSS (Single File) -->
     <style>
-        /* Reset */
-        * {
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
-        /* Body */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right, #eef2f3, #d9e4f5);
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        /* Header */
         header {
-            background-color: #4CAF50;
+            background-color: #003366;
             color: white;
+            padding: 1rem;
             text-align: center;
-            padding: 30px 20px;
-            border-radius: 15px;
-            margin-bottom: 30px;
         }
 
-        header h1 {
-            margin-bottom: 8px;
-        }
-
-        header p {
-            font-size: 0.95rem;
-            opacity: 0.9;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            margin-top: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Main */
         main {
-            max-width: 900px;
-            margin: auto;
-        }
-
-        /* Card Sections */
-        section {
+            max-width: 800px;
+            margin: 2rem auto;
             background-color: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        section h2 {
-            color: #4CAF50;
-            margin-bottom: 15px;
-        }
-
-        /* ✅ Profile Picture */
-        .profile-pic {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #4CAF50;
-            margin-bottom: 15px;
-        }
-
-        /* Projects */
-        ul.projects {
-            list-style: none;
-            margin-top: 10px;
-        }
-
-        ul.projects li {
-            padding: 10px;
-            margin: 8px 0;
-            background: #f4f7fb;
+            padding: 2rem;
             border-radius: 8px;
-            transition: transform 0.3s;
         }
 
-        ul.projects li:hover {
-            transform: scale(1.04);
-        }
-
-        /* Links */
-        a {
-            color: #4CAF50;
-        }
-
-        /* Footer */
         footer {
             text-align: center;
-            padding: 15px;
-            background-color: #333;
+            padding: 1rem;
+            background-color: #003366;
             color: white;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-
-        /* ✅ Mobile Responsive */
-        @media (max-width: 600px) {
-            nav ul {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .profile-pic {
-                width: 80px;
-                height: 80px;
-            }
+            margin-top: 2rem;
         }
     </style>
 </head>
@@ -143,45 +44,24 @@
 
     <header>
         <h1>Welcome to My Home Page</h1>
-        <p>Learning • Building • Creating</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="about">
-            <img src="66829.jpg" alt="Profile photo" class="profile-pic">
-            <h2>About Me</h2>
-            <p>
-                I am learning web development and enhancing this home page as part of my WDD130 course.
-                I enjoy designing clean layouts and improving my coding skills.
-            </p>
-        </section>
+        <h2>About Me</h2>
+        <p>
+            My name is Richard Muwonge. I am a student at BYU-Pathway Worldwide
+            studying web development. I am learning how to create websites using
+            HTML and CSS, and I am excited to improve my skills throughout this course.
+        </p>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <ul class="projects">
-                <li>Personal Portfolio Website</li>
-                <li>Interactive Web Quiz</li>
-                <li>Simple JavaScript Game</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email me at:
-                <a href="mailto:myemail@example.com">myemail@example.com</a>
-            </p>
-        </section>
+        <p>
+            This page is part of my WDD 130 coursework. I look forward to building
+            more advanced and creative web pages as I continue learning.
+        </p>
     </main>
 
     <footer>
-        <p>© 2026 My Name. All rights reserved.</p>
+        <p>© 2026 Richard Muwonge | BYU-Pathway Worldwide</p>
     </footer>
 
 </body>
