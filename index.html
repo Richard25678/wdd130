@@ -2,67 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="WDD 130 Home Page">
-    <meta name="author" content="Richard Muwonge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard Muwonge | WDD 130</title>
+    <title>My Home Page</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="My WDD130 home page with examples of HTML and CSS, by Muwonge Richard.">
+    <meta name="author" content="Muwonge Richard">
 
+    <!-- Embedded CSS -->
     <style>
+        /* General Page Styles */
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
         }
 
         header {
-            background-color: #003366;
+            background-color: #4a90e2;
             color: white;
-            padding: 1rem;
+            padding: 20px 0;
             text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         main {
-            max-width: 800px;
-            margin: 2rem auto;
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        main img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        p {
+            padding: 0;
+        }
+
+        aside {
+            width: 250px;
+            margin: 20px auto;
+            border: 1px solid #333;
+            padding: 15px;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+
+        aside img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
         }
 
         footer {
+            margin-top: 30px;
+            border-top: 2px solid #333;
             text-align: center;
-            padding: 1rem;
-            background-color: #003366;
-            color: white;
-            margin-top: 2rem;
+            padding: 10px 0;
+            background-color: #eaeaea;
         }
     </style>
 </head>
-
 <body>
-
     <header>
         <h1>Welcome to My Home Page</h1>
+        <nav>
+            <a href="#">W1</a>
+            <a href="#">W2</a>
+            <a href="#">W3</a>
+            <a href="#">W4</a>
+            <a href="#">W5</a>
+            <a href="#">W6</a>
+            <a href="#">W7</a>
+        </nav>
     </header>
 
     <main>
         <h2>About Me</h2>
-        <p>
-            My name is Richard Muwonge. I am a student at BYU-Pathway Worldwide
-            studying web development. I am learning how to create websites using
-            HTML and CSS, and I am excited to improve my skills throughout this course.
-        </p>
-
-        <p>
-            This page is part of my WDD 130 coursework. I look forward to building
-            more advanced and creative web pages as I continue learning.
-        </p>
+        <img src="66829.jpg" alt="Profile picture of Muwonge Richard">
+        <p>Hello! I am Muwonge Richard, learning web development through BYU-I's WDD130 course. I enjoy building websites and improving my HTML/CSS skills.</p>
     </main>
 
-    <footer>
-        <p>© 2026 Richard Muwonge | BYU-Pathway Worldwide</p>
-    </footer>
+    <aside>
+        <h2>Uganda</h2>
+        <img src="Jinja-City-2.jpeg" alt="Scenic view of Uganda">
+        <p>Uganda, known as the Pearl of Africa, is famous for its wildlife, lakes, and beautiful landscapes.</p>
+    </aside>
 
+    <footer>
+        <p>&copy; 2026 Muwonge Richard | All rights reserved</p>
+    </footer>
 </body>
 </html>
+
+           
