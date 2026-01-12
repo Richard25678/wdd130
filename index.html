@@ -3,87 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 130 Home Page Enhancement">
+    <meta name="description" content="Learn about our white water rafting company, our mission, history, and adventure experiences.">
     <meta name="author" content="Muwonge Richard">
-    <title>WDD 130 | Home Page</title>
+    <title>About Us | White Water Rafting</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        /* =======================
+           CSS VARIABLES
+        ======================= */
+        :root {
+            --primary-color: #1e6091;
+            --secondary-color: #168aad;
+            --accent-color: #f0f0f0;
+            --highlight-color: #ff6b35;
+
+            --heading-font: 'Arial', Helvetica, sans-serif;
+            --body-font: 'Verdana', Geneva, sans-serif;
         }
 
+        /* =======================
+           CSS RESET
+        ======================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* =======================
+           BODY
+        ======================= */
+        body {
+            font-family: var(--body-font);
+            color: #333;
+            background-color: var(--accent-color);
+            line-height: 1.6;
+        }
+
+        /* =======================
+           HEADER
+        ======================= */
         header {
-            background-color: #003366;
-            color: white;
-            padding: 1rem;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 32px;
+            background-color: var(--primary-color);
+        }
+
+        header img {
+            width: 120px;
         }
 
         nav a {
-            color: white;
-            margin: 0 10px;
             text-decoration: none;
+            color: #fff;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
         }
 
+        nav a:hover {
+            color: var(--highlight-color);
+        }
+
+        /* =======================
+           HERO SECTION
+        ======================= */
+        .hero {
+            position: relative;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(30, 96, 145, 0.7);
+            color: #fff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            font-size: 2.5rem;
+            font-family: var(--heading-font);
+        }
+
+        .hero article {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 16px;
+            border-radius: 8px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .hero article img {
+            width: 100px;
+            float: right;
+            margin-left: 12px;
+            border-radius: 50%;
+        }
+
+        /* =======================
+           MAIN CONTENT
+        ======================= */
         main {
-            padding: 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px;
         }
 
         section {
-            margin-bottom: 2rem;
+            background-color: #fff;
+            margin-bottom: 24px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
 
-        img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
+        section h2 {
+            color: var(--primary-color);
+            margin-bottom: 12px;
         }
 
+        section p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* =======================
+           FOOTER
+        ======================= */
         footer {
-            background-color: #eee;
+            background-color: var(--primary-color);
+            color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 20px 16px;
+            margin-top: 32px;
         }
+
+        footer .socialmedia a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        footer .socialmedia img {
+            width: 32px;
+            transition: transform 0.3s;
+        }
+
+        footer .socialmedia img:hover {
+            transform: scale(1.2);
+        }
+
+        /* =======================
+           RESPONSIVE
+        ======================= */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 12px;
+            }
+
+            .hero article {
+                position: static;
+                float: none;
+                max-width: 100%;
+                margin-top: 12px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
     </style>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
-        <h1>Welcome to My WDD 130 Home Page</h1>
+        <img src="images.png" alt="White Water Rafting Logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <!-- HERO SECTION -->
     <main>
+        <div class="hero">
+            <img src="123.jpg" alt="Rafting adventure on a wild river">
+            <h1>White Water Rafting</h1>
+            <article>
+                <img src="11.png" alt="Happy rafting guide">
+                <p>
+                    Our mission is to provide safe, exciting, and unforgettable
+                    white water rafting adventures while respecting nature and
+                    building strong teamwork experiences.
+                </p>
+            </article>
+        </div>
+
+        <!-- HISTORY -->
         <section>
-            <h2>About Me</h2>
+            <h2>Our History</h2>
             <p>
-                My name is Muwonge Richard. I am a student at BYU-Pathway Worldwide
-                studying web development. This page is part of the WDD 130 course
-                where I am learning how to build websites using HTML and CSS.
+                White Water Rafting was founded by adventure lovers who wanted
+                to share the excitement of river rafting with the world.
+                Over the years, we have safely guided thousands of guests.
             </p>
         </section>
 
+        <!-- ADVENTURE CALL TO ACTION -->
         <section>
-            <h2>My Country</h2>
-            <img src="Jinja-City-2.jpeg" alt="Landscape view of Uganda">
+            <h2>Adventure Awaits You!</h2>
             <p>
-                Uganda is located in East Africa. It is known for its beautiful
-                scenery, wildlife, and friendly people. It is often called the
-                Pearl of Africa.
+                Join us for thrilling white water adventures, team-building trips,
+                and unforgettable memories. Book your next adventure today!
             </p>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Muwonge Richard | Uganda</p>
-        <p>BYU-Pathway Worldwide</p>
+        <p>© 2026 White Water Rafting | Muwonge Richard</p>
+        <div class="socialmedia">
+            <a href="https://facebook.com"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="instagram.avif" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 </html>
-
