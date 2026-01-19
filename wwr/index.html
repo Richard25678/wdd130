@@ -8,9 +8,6 @@
     <title>About Us | White Water Rafting</title>
 
     <style>
-        /* =======================
-           CSS VARIABLES
-        ======================== */
         :root {
             --primary-color: #1e6091;
             --secondary-color: #168aad;
@@ -23,14 +20,7 @@
             --transition-speed: 0.3s;
         }
 
-        /* =======================
-           CSS RESET
-        ======================== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: var(--body-font);
@@ -39,9 +29,6 @@
             line-height: 1.6;
         }
 
-        /* =======================
-           HEADER
-        ======================== */
         header {
             display: flex;
             justify-content: space-between;
@@ -51,9 +38,7 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
 
-        header img {
-            width: 120px;
-        }
+        header img { width: 120px; }
 
         nav a {
             text-decoration: none;
@@ -63,30 +48,14 @@
             transition: color var(--transition-speed);
         }
 
-        nav a:hover {
-            color: var(--highlight-color);
-        }
+        nav a:hover { color: var(--highlight-color); }
 
-        /* =======================
-           HERO SECTION
-        ======================== */
-        .hero {
-            position: relative;
-            text-align: center;
-            margin-bottom: 32px;
-        }
+        .hero { position: relative; text-align: center; margin-bottom: 32px; }
 
-        .hero img {
-            width: 100%;
-            height: auto;
-            border-bottom: 5px solid var(--primary-color);
-            display: block;
-        }
+        .hero img { width: 100%; height: auto; border-bottom: 5px solid var(--primary-color); }
 
         .hero h1 {
-            position: absolute;
-            top: 30%;
-            left: 50%;
+            position: absolute; top: 30%; left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(30, 96, 145, 0.7);
             color: var(--text-light);
@@ -98,9 +67,7 @@
         }
 
         .hero article {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
+            position: absolute; bottom: 20px; left: 20px;
             background-color: rgba(255, 255, 255, 0.9);
             padding: 16px;
             border-radius: 8px;
@@ -109,25 +76,11 @@
             transition: transform var(--transition-speed);
         }
 
-        .hero article:hover {
-            transform: translateY(-5px);
-        }
+        .hero article:hover { transform: translateY(-5px); }
 
-        .hero article img {
-            width: 100px;
-            float: right;
-            margin-left: 12px;
-            border-radius: 50%;
-        }
+        .hero article img { width: 100px; float: right; margin-left: 12px; border-radius: 50%; }
 
-        /* =======================
-           MAIN CONTENT
-        ======================== */
-        main {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 16px;
-        }
+        main { max-width: 900px; margin: 0 auto; padding: 16px; }
 
         section {
             background-color: #fff;
@@ -138,24 +91,12 @@
             transition: transform var(--transition-speed);
         }
 
-        section:hover {
-            transform: translateY(-3px);
-        }
+        section:hover { transform: translateY(-3px); }
 
-        section h2 {
-            color: var(--primary-color);
-            margin-bottom: 12px;
-            font-family: var(--heading-font);
-        }
+        section h2 { color: var(--primary-color); margin-bottom: 12px; font-family: var(--heading-font); }
 
-        section p {
-            font-size: 1rem;
-            color: #555;
-        }
+        section p { font-size: 1rem; color: #555; }
 
-        /* =======================
-           BUTTONS
-        ======================== */
         .button {
             display: inline-block;
             background-color: var(--secondary-color);
@@ -168,13 +109,8 @@
             transition: background-color var(--transition-speed);
         }
 
-        .button:hover {
-            background-color: var(--highlight-color);
-        }
+        .button:hover { background-color: var(--highlight-color); }
 
-        /* =======================
-           FOOTER
-        ======================== */
         footer {
             background-color: var(--primary-color);
             color: var(--text-light);
@@ -183,49 +119,22 @@
             margin-top: 32px;
         }
 
-        footer .socialmedia a {
-            margin: 0 10px;
-            display: inline-block;
-        }
+        footer .socialmedia a { margin: 0 10px; display: inline-block; }
 
-        footer .socialmedia img {
-            width: 32px;
-            transition: transform var(--transition-speed);
-        }
+        footer .socialmedia img { width: 32px; transition: transform var(--transition-speed); }
 
-        footer .socialmedia img:hover {
-            transform: scale(1.2);
-        }
+        footer .socialmedia img:hover { transform: scale(1.2); }
 
-        /* =======================
-           RESPONSIVE
-        ======================== */
         @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            nav {
-                margin-top: 12px;
-            }
-
-            .hero article {
-                position: static;
-                float: none;
-                max-width: 100%;
-                margin-top: 12px;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
+            header { flex-direction: column; align-items: flex-start; }
+            nav { margin-top: 12px; }
+            .hero article { position: static; float: none; max-width: 100%; margin-top: 12px; }
+            .hero h1 { font-size: 2rem; }
         }
     </style>
 </head>
 
 <body>
-    <!-- HEADER -->
     <header>
         <img src="images/rafting-logo-design-river-white-water-rafting-logo_1594-563.avif" alt="White Water Rafting Logo">
         <nav>
@@ -236,44 +145,29 @@
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
     <main>
         <div class="hero">
             <img src="images/14.jpg" alt="Rafting adventure on a wild river">
             <h1>White Water Rafting</h1>
             <article>
                 <img src="images/images.png" alt="Happy rafting guide">
-                <p>
-                    Our mission is to provide safe, exciting, and unforgettable
-                    white water rafting adventures while respecting nature and
-                    building strong teamwork experiences.
-                </p>
+                <p>Our mission is to provide safe, exciting, and unforgettable white water rafting adventures while respecting nature and building strong teamwork experiences.</p>
                 <a href="trips.html" class="button">Book Now</a>
             </article>
         </div>
 
-        <!-- HISTORY -->
         <section>
             <h2>Our History</h2>
-            <p>
-                White Water Rafting was founded by adventure lovers who wanted
-                to share the excitement of river rafting with the world.
-                Over the years, we have safely guided thousands of guests.
-            </p>
+            <p>White Water Rafting was founded by adventure lovers who wanted to share the excitement of river rafting with the world. Over the years, we have safely guided thousands of guests.</p>
         </section>
 
-        <!-- ADVENTURE CALL TO ACTION -->
         <section>
             <h2>Adventure Awaits You!</h2>
-            <p>
-                Join us for thrilling white water adventures, team-building trips,
-                and unforgettable memories. Book your next adventure today!
-            </p>
+            <p>Join us for thrilling white water adventures, team-building trips, and unforgettable memories. Book your next adventure today!</p>
             <a href="trips.html" class="button">Book Your Adventure</a>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>© 2026 White Water Rafting | Muwonge Richard</p>
         <div class="socialmedia">
