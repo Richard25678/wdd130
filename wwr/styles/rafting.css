@@ -1,115 +1,124 @@
+/* ===== CSS VARIABLES & RESET ===== */
 :root {
-            --primary-color: #1e6091;
-            --secondary-color: #168aad;
-            --accent-color: #f0f0f0;
-            --highlight-color: #ff6b35;
-            --text-light: #ffffff;
-            --text-dark: #333333;
-            --heading-font: Arial, Helvetica, sans-serif;
-            --body-font: Verdana, Geneva, sans-serif;
-        }
+  --primary-color: #003366;
+  --accent-color: #00509e;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        body {
-            font-family: var(--body-font);
-            background-color: var(--accent-color);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
+/* ===== BODY ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
 
-        header {
-            background-color: var(--primary-color);
-            padding: 16px 32px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+}
 
-        header img {
-            width: 120px;
-        }
+header img {
+  width: 100px;
+}
 
-        nav a {
-            color: var(--text-light);
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: bold;
-        }
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: bold;
+}
 
-        nav a:hover {
-            color: var(--highlight-color);
-        }
+header nav a:hover {
+  text-decoration: underline;
+}
 
-        .hero {
-            position: relative;
-            text-align: center;
-        }
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  text-align: left;
+  padding: 2rem;
+  background-color: #e0f0ff;
+}
 
-        .hero img {
-            width: 100%;
-            display: block;
-        }
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 3rem;
+  color: var(--primary-color);
+}
 
-        .hero h1 {
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(30, 96, 145, 0.8);
-            color: var(--text-light);
-            padding: 20px 40px;
-            border-radius: 8px;
-        }
+.hero article {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  width: 60%;
+}
 
-        .hero article {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 16px;
-            max-width: 300px;
-            border-radius: 8px;
-        }
+.hero article img {
+  float: right;
+  width: 200px;
+  margin-left: 1rem;
+}
 
-        .hero article img {
-            width: 80px;
-            float: right;
-            margin-left: 10px;
-            border-radius: 50%;
-        }
+/* ===== MAIN SECTIONS ===== */
+section {
+  max-width: 1000px;
+  margin: 200px auto 2rem;
+  padding: 1rem;
+}
 
-        main {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 16px;
-        }
+section h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
 
-        section {
-            background-color: #ffffff;
-            padding: 20px;
-            margin-bottom: 24px;
-            border-radius: 8px;
-        }
+section figure {
+  display: inline-block;
+  margin-right: 1rem;
+  text-align: center;
+}
 
-        section h2 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
+section figure img {
+  width: 150px;
+  height: auto;
+}
 
-        footer {
-            background-color: var(--primary-color);
-            color: var(--text-light);
-            text-align: center;
-            padding: 20px;
-        }
+/* ===== FOOTER ===== */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+}
 
-        footer img {
-            width: 30px;
-            margin: 0 8px;
-        }
-    
+footer .socialmedia {
+  display: flex;
+}
+
+footer .socialmedia a {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+footer .socialmedia img {
+  width: 30px;
+  height: 30px;
+}
+
+            
