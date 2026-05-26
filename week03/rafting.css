@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #0b4f6c;
+    --secondary-color: #01baef;
+    --accent1-color: #1c1c1c;
+    --accent2-color: #fbfbff;
+    --surface-color: #ffffff;
+    --muted-color: #4d5a6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+}
+
+.hero article {
+    position: absolute;
+}
+
+.hero article img {
+    float: right;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Layout + styling for About page */
+
+header {
+    display: grid;
+    grid-template-columns: 120px auto;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    margin-left: 15px;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+figure img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.socialmedia img {
+    width: 35px;
+    margin-left: 10px;
+}
+
+
