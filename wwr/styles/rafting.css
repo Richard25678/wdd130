@@ -108,6 +108,8 @@ header nav a {
 section h2 {
     margin-top: 12px;
     margin-bottom: 8px;
+    border-bottom: 3px solid var(--accent2-color);
+    padding-bottom: 6px;
 }
 
 footer {
