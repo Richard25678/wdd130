@@ -121,6 +121,7 @@ p {
 }
 
 .hero article img {
+    float: right;
     width: 100%;
     height: 100px;
     object-fit: cover;
