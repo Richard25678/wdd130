@@ -5,9 +5,13 @@
     --accent2-color: #c77a2a;
     --accent3-color: #ffffff;
     --border-color: #dfeadb;
-    --heading-font: Georgia, 'Times New Roman', serif;
-    --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* =========================
+   GENERAL STYLES
+   ========================= */
 
 * {
     margin: 0;
@@ -49,6 +53,10 @@ p {
     margin-bottom: 0.9rem;
 }
 
+/* =========================
+   HEADER
+   ========================= */
+
 .site-header {
     display: grid;
     grid-template-columns: 180px 1fr;
@@ -81,6 +89,10 @@ p {
 .primary-nav a:focus {
     background: rgba(11, 90, 68, 0.08);
 }
+
+/* =========================
+   HERO
+   ========================= */
 
 .hero {
     position: relative;
@@ -128,6 +140,10 @@ p {
     border-radius: 4px;
 }
 
+/* =========================
+   SECTIONS
+   ========================= */
+
 section {
     margin-top: 2rem;
 }
@@ -137,6 +153,10 @@ section h2 {
     border-bottom: 3px solid var(--accent2-color);
     padding-bottom: 0.45rem;
 }
+
+/* =========================
+   HISTORY
+   ========================= */
 
 .history-content {
     display: grid;
@@ -156,6 +176,10 @@ section h2 {
     border-radius: 6px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
+
+/* =========================
+   ADVENTURE GALLERY
+   ========================= */
 
 .adventure-grid {
     display: flex;
@@ -187,6 +211,186 @@ section h2 {
     font-weight: 700;
     color: var(--primary-color);
 }
+
+/* =========================
+   CONTACT US PAGE
+   ========================= */
+
+main > h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 2.4rem;
+}
+
+/* Company information */
+
+.company-info {
+    text-align: center;
+    background: var(--accent3-color);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.company-info h2 {
+    margin-bottom: 0.8rem;
+}
+
+.company-info p {
+    margin-bottom: 0.4rem;
+}
+
+/* Map and form layout */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.map,
+.contact-form {
+    background: var(--accent3-color);
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+/* Google Map */
+
+.map iframe {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border: 1px solid var(--border-color);
+    margin: 0 auto;
+}
+
+/* =========================
+   CONTACT FORM
+   ========================= */
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    font: inherit;
+    color: var(--accent1-color);
+    background: var(--accent3-color);
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 1px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Radio button section */
+
+.contact-form fieldset {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.contact-form legend {
+    font-weight: 700;
+    padding: 0 0.4rem;
+}
+
+.contact-form fieldset label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: 400;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 0.4rem;
+}
+
+/* Submit button */
+
+.contact-form button {
+    width: fit-content;
+    padding: 0.75rem 1.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background: var(--primary-color);
+    color: var(--accent3-color);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+    background: var(--accent1-color);
+}
+
+/* =========================
+   EMPLOYEE PROFILES
+   ========================= */
+
+.employee-profiles {
+    margin-top: 2rem;
+}
+
+.employee-profiles > h2 {
+    text-align: center;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.employee-grid figure {
+    background: var(--accent3-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.employee-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.employee-grid figcaption {
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
     display: flex;
@@ -220,17 +424,24 @@ footer p {
     border-radius: 50%;
 }
 
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
 @media (max-width: 700px) {
 
     .site-header,
     .history-content,
     footer {
-        grid-template-columns: 1fr;
         display: block;
     }
 
     .site-header {
         text-align: center;
+    }
+
+    .site-header img {
+        margin: 0 auto;
     }
 
     .primary-nav {
@@ -261,5 +472,19 @@ footer p {
     .socialmedia {
         justify-content: center;
         margin-top: 0.8rem;
+    }
+
+    /* Contact page mobile */
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map iframe {
+        width: 100%;
     }
 }
